@@ -1,0 +1,19 @@
+{
+  "name": "lazy-fe",
+  "version": "0.1.0",
+  "description": "慵懒是对生活的一种态度，喝杯咖啡享受lazy-fe带来短暂慵懒的生活。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuxchen/lazy-fe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuxchen/lazy-fe/issues"
+  },
+  "homepage": "https://github.com/zhuxchen/lazy-fe#readme"
+}
