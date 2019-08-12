@@ -19,11 +19,23 @@
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
-    "husky": "^3.0.3"
+    "husky": "^3.0.3",
+    "lint-staged": "^9.2.1"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint .commitlintrc.js -E HUSKY_GIT_PARAMS"
+      "commit-msg": "commitlint .commitlintrc.js -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "packages/src/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "packages/src/**/*.{css,less}": [
+      "stylelint --fix",
+      "git add"
+    ]
   }
 }

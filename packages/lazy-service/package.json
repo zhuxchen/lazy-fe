@@ -1,0 +1,17 @@
+{
+  "name": "lazy-service",
+  "version": "1.0.0",
+  "description": "基于axios封装通用的service层",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "axios": ">=0.19.0"
+  },
+  "devDependencies": {
+    "axios": "^0.19.0"
+  }
+}
