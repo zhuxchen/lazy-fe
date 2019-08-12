@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/zhuxchen/lazy-fe/issues"
   },
-  "homepage": "https://github.com/zhuxchen/lazy-fe#readme"
+  "homepage": "https://github.com/zhuxchen/lazy-fe#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "husky": "^3.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint .commitlintrc.js -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
